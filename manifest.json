@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "易付宝监控",
+    "version": "1.0",
+    "description": "监控易付宝账户可用余额",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title":"易付宝监控",
+        "default_popup":"popup.html"
+    },
+    "background": {
+        "scripts": [
+            "js/status.js"
+        ]
+    },
+    "permissions": [
+        "*://pay.suning.com/*",
+        "*://licai.suning.com/*",
+        "*://paypassport.suning.com/*",
+        "notifications"
+    ]
+}
